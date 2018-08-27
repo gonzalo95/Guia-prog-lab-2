@@ -1,0 +1,11 @@
+C:\Users\Planta alta\Desktop\Guia-prog-lab-2\año bisiesto\año bisiesto\bin\Debug\netcoreapp2.0\año bisiesto.deps.json
+C:\Users\Planta alta\Desktop\Guia-prog-lab-2\año bisiesto\año bisiesto\bin\Debug\netcoreapp2.0\año bisiesto.runtimeconfig.json
+C:\Users\Planta alta\Desktop\Guia-prog-lab-2\año bisiesto\año bisiesto\bin\Debug\netcoreapp2.0\año bisiesto.runtimeconfig.dev.json
+C:\Users\Planta alta\Desktop\Guia-prog-lab-2\año bisiesto\año bisiesto\bin\Debug\netcoreapp2.0\año bisiesto.dll
+C:\Users\Planta alta\Desktop\Guia-prog-lab-2\año bisiesto\año bisiesto\bin\Debug\netcoreapp2.0\año bisiesto.pdb
+C:\Users\Planta alta\Desktop\Guia-prog-lab-2\año bisiesto\año bisiesto\obj\Debug\netcoreapp2.0\año bisiesto.csprojAssemblyReference.cache
+C:\Users\Planta alta\Desktop\Guia-prog-lab-2\año bisiesto\año bisiesto\obj\Debug\netcoreapp2.0\año bisiesto.csproj.CoreCompileInputs.cache
+C:\Users\Planta alta\Desktop\Guia-prog-lab-2\año bisiesto\año bisiesto\obj\Debug\netcoreapp2.0\año bisiesto.AssemblyInfoInputs.cache
+C:\Users\Planta alta\Desktop\Guia-prog-lab-2\año bisiesto\año bisiesto\obj\Debug\netcoreapp2.0\año bisiesto.AssemblyInfo.cs
+C:\Users\Planta alta\Desktop\Guia-prog-lab-2\año bisiesto\año bisiesto\obj\Debug\netcoreapp2.0\año bisiesto.dll
+C:\Users\Planta alta\Desktop\Guia-prog-lab-2\año bisiesto\año bisiesto\obj\Debug\netcoreapp2.0\año bisiesto.pdb

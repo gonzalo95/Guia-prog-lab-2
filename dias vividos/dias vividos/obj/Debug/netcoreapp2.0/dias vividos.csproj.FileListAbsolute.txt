@@ -1,0 +1,11 @@
+C:\Users\Planta alta\Desktop\Guia-prog-lab-2\dias vividos\dias vividos\bin\Debug\netcoreapp2.0\dias vividos.deps.json
+C:\Users\Planta alta\Desktop\Guia-prog-lab-2\dias vividos\dias vividos\bin\Debug\netcoreapp2.0\dias vividos.runtimeconfig.json
+C:\Users\Planta alta\Desktop\Guia-prog-lab-2\dias vividos\dias vividos\bin\Debug\netcoreapp2.0\dias vividos.runtimeconfig.dev.json
+C:\Users\Planta alta\Desktop\Guia-prog-lab-2\dias vividos\dias vividos\bin\Debug\netcoreapp2.0\dias vividos.dll
+C:\Users\Planta alta\Desktop\Guia-prog-lab-2\dias vividos\dias vividos\bin\Debug\netcoreapp2.0\dias vividos.pdb
+C:\Users\Planta alta\Desktop\Guia-prog-lab-2\dias vividos\dias vividos\obj\Debug\netcoreapp2.0\dias vividos.csprojAssemblyReference.cache
+C:\Users\Planta alta\Desktop\Guia-prog-lab-2\dias vividos\dias vividos\obj\Debug\netcoreapp2.0\dias vividos.csproj.CoreCompileInputs.cache
+C:\Users\Planta alta\Desktop\Guia-prog-lab-2\dias vividos\dias vividos\obj\Debug\netcoreapp2.0\dias vividos.AssemblyInfoInputs.cache
+C:\Users\Planta alta\Desktop\Guia-prog-lab-2\dias vividos\dias vividos\obj\Debug\netcoreapp2.0\dias vividos.AssemblyInfo.cs
+C:\Users\Planta alta\Desktop\Guia-prog-lab-2\dias vividos\dias vividos\obj\Debug\netcoreapp2.0\dias vividos.dll
+C:\Users\Planta alta\Desktop\Guia-prog-lab-2\dias vividos\dias vividos\obj\Debug\netcoreapp2.0\dias vividos.pdb
