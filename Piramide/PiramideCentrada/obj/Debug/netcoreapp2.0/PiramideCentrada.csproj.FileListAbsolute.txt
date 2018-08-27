@@ -1,0 +1,11 @@
+C:\Users\Planta alta\source\repos\PiramideCentrada\PiramideCentrada\bin\Debug\netcoreapp2.0\PiramideCentrada.deps.json
+C:\Users\Planta alta\source\repos\PiramideCentrada\PiramideCentrada\bin\Debug\netcoreapp2.0\PiramideCentrada.runtimeconfig.json
+C:\Users\Planta alta\source\repos\PiramideCentrada\PiramideCentrada\bin\Debug\netcoreapp2.0\PiramideCentrada.runtimeconfig.dev.json
+C:\Users\Planta alta\source\repos\PiramideCentrada\PiramideCentrada\bin\Debug\netcoreapp2.0\PiramideCentrada.dll
+C:\Users\Planta alta\source\repos\PiramideCentrada\PiramideCentrada\bin\Debug\netcoreapp2.0\PiramideCentrada.pdb
+C:\Users\Planta alta\source\repos\PiramideCentrada\PiramideCentrada\obj\Debug\netcoreapp2.0\PiramideCentrada.csprojAssemblyReference.cache
+C:\Users\Planta alta\source\repos\PiramideCentrada\PiramideCentrada\obj\Debug\netcoreapp2.0\PiramideCentrada.csproj.CoreCompileInputs.cache
+C:\Users\Planta alta\source\repos\PiramideCentrada\PiramideCentrada\obj\Debug\netcoreapp2.0\PiramideCentrada.AssemblyInfoInputs.cache
+C:\Users\Planta alta\source\repos\PiramideCentrada\PiramideCentrada\obj\Debug\netcoreapp2.0\PiramideCentrada.AssemblyInfo.cs
+C:\Users\Planta alta\source\repos\PiramideCentrada\PiramideCentrada\obj\Debug\netcoreapp2.0\PiramideCentrada.dll
+C:\Users\Planta alta\source\repos\PiramideCentrada\PiramideCentrada\obj\Debug\netcoreapp2.0\PiramideCentrada.pdb
