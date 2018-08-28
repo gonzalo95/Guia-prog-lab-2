@@ -1,0 +1,11 @@
+C:\Users\Planta alta\Desktop\Guia-prog-lab-2\Conversor\Conversor\bin\Debug\netcoreapp2.0\Conversor.deps.json
+C:\Users\Planta alta\Desktop\Guia-prog-lab-2\Conversor\Conversor\bin\Debug\netcoreapp2.0\Conversor.runtimeconfig.json
+C:\Users\Planta alta\Desktop\Guia-prog-lab-2\Conversor\Conversor\bin\Debug\netcoreapp2.0\Conversor.runtimeconfig.dev.json
+C:\Users\Planta alta\Desktop\Guia-prog-lab-2\Conversor\Conversor\bin\Debug\netcoreapp2.0\Conversor.dll
+C:\Users\Planta alta\Desktop\Guia-prog-lab-2\Conversor\Conversor\bin\Debug\netcoreapp2.0\Conversor.pdb
+C:\Users\Planta alta\Desktop\Guia-prog-lab-2\Conversor\Conversor\obj\Debug\netcoreapp2.0\Conversor.csprojAssemblyReference.cache
+C:\Users\Planta alta\Desktop\Guia-prog-lab-2\Conversor\Conversor\obj\Debug\netcoreapp2.0\Conversor.csproj.CoreCompileInputs.cache
+C:\Users\Planta alta\Desktop\Guia-prog-lab-2\Conversor\Conversor\obj\Debug\netcoreapp2.0\Conversor.AssemblyInfoInputs.cache
+C:\Users\Planta alta\Desktop\Guia-prog-lab-2\Conversor\Conversor\obj\Debug\netcoreapp2.0\Conversor.AssemblyInfo.cs
+C:\Users\Planta alta\Desktop\Guia-prog-lab-2\Conversor\Conversor\obj\Debug\netcoreapp2.0\Conversor.dll
+C:\Users\Planta alta\Desktop\Guia-prog-lab-2\Conversor\Conversor\obj\Debug\netcoreapp2.0\Conversor.pdb

@@ -1,0 +1,11 @@
+C:\Users\Planta alta\Desktop\Guia-prog-lab-2\CalculoDeArea\CalculoDeArea\bin\Debug\netcoreapp2.0\CalculoDeArea.deps.json
+C:\Users\Planta alta\Desktop\Guia-prog-lab-2\CalculoDeArea\CalculoDeArea\bin\Debug\netcoreapp2.0\CalculoDeArea.runtimeconfig.json
+C:\Users\Planta alta\Desktop\Guia-prog-lab-2\CalculoDeArea\CalculoDeArea\bin\Debug\netcoreapp2.0\CalculoDeArea.runtimeconfig.dev.json
+C:\Users\Planta alta\Desktop\Guia-prog-lab-2\CalculoDeArea\CalculoDeArea\bin\Debug\netcoreapp2.0\CalculoDeArea.dll
+C:\Users\Planta alta\Desktop\Guia-prog-lab-2\CalculoDeArea\CalculoDeArea\bin\Debug\netcoreapp2.0\CalculoDeArea.pdb
+C:\Users\Planta alta\Desktop\Guia-prog-lab-2\CalculoDeArea\CalculoDeArea\obj\Debug\netcoreapp2.0\CalculoDeArea.csprojAssemblyReference.cache
+C:\Users\Planta alta\Desktop\Guia-prog-lab-2\CalculoDeArea\CalculoDeArea\obj\Debug\netcoreapp2.0\CalculoDeArea.csproj.CoreCompileInputs.cache
+C:\Users\Planta alta\Desktop\Guia-prog-lab-2\CalculoDeArea\CalculoDeArea\obj\Debug\netcoreapp2.0\CalculoDeArea.AssemblyInfoInputs.cache
+C:\Users\Planta alta\Desktop\Guia-prog-lab-2\CalculoDeArea\CalculoDeArea\obj\Debug\netcoreapp2.0\CalculoDeArea.AssemblyInfo.cs
+C:\Users\Planta alta\Desktop\Guia-prog-lab-2\CalculoDeArea\CalculoDeArea\obj\Debug\netcoreapp2.0\CalculoDeArea.dll
+C:\Users\Planta alta\Desktop\Guia-prog-lab-2\CalculoDeArea\CalculoDeArea\obj\Debug\netcoreapp2.0\CalculoDeArea.pdb
