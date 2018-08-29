@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{63CE414C-E01B-4262-9308-D85450881E6A}</ProjectGuid>
+    <ProjectGuid>{39203F10-03AF-44B6-86FE-99B3B2C3B95D}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>Alumno</RootNamespace>
-    <AssemblyName>Alumno</AssemblyName>
+    <RootNamespace>Boligrafo</RootNamespace>
+    <AssemblyName>Boligrafo</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -42,7 +42,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ALumno.cs" />
+    <Compile Include="Boligrado.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
