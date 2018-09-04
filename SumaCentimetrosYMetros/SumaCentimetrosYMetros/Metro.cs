@@ -30,5 +30,15 @@ namespace SumaCentimetrosYMetros
     {
       return !(metro1.valor == metro2.valor);
     }
+
+    public static explicit operator Metro(Centimetro centimetro)
+    {
+      return new Metro((int)centimetro.valor / 100);
+    }
+
+    public static implicit operator Centimetro(Metro metro)
+    {
+      return new Centimetro(metro.valor * 100);
+    }
   }
 }

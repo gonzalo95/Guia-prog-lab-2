@@ -28,6 +28,11 @@ namespace SumaCentimetrosYMetros
       Console.WriteLine((new Centimetro(25) != new Centimetro(800)));
       Console.WriteLine((new Centimetro(800) != new Centimetro(800)));
 
+      Metro metro = new Metro(55);
+      Centimetro centimetro = new Centimetro(73);
+      Metro resultado = metro + (Metro)centimetro;
+      Console.WriteLine(resultado.valor);
+
       Console.Read();
     }
   }
