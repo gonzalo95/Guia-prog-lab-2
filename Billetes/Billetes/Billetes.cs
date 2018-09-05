@@ -104,12 +104,11 @@ namespace Billetes
     {
       return e != (Euro)p;
     }
-    /*
-    public static implicit operator Euro(Euro e)
+    
+    public static implicit operator Euro(Double d)
     {
-        return new Euro(e.cantidad);
+        return new Euro(d);
     }
-    */
 
     }
   class Dolar
@@ -165,7 +164,7 @@ namespace Billetes
 
     public static explicit operator Euro(Dolar d)
     {
-      return new Euro(d.GetCantidad() * Euro.GetCotizacion());
+      return new Euro(d.GetCantidad() / Euro.GetCotizacion());
     }
 
     public static explicit operator Pesos(Dolar d)
@@ -207,6 +206,11 @@ namespace Billetes
     public static bool operator !=(Dolar d, Pesos p)
     {
       return d != (Dolar)p;
+    }
+
+    public static implicit operator Dolar(Double d)
+    {
+      return new Dolar(d);
     }
   }
   class Pesos
@@ -262,7 +266,7 @@ namespace Billetes
 
     public static explicit operator Euro(Pesos p)
     {
-       return new Euro(p.GetCantidad() * cotizRespectoDolar * Euro.GetCotizacion());
+       return new Euro(p.GetCantidad() * cotizRespectoDolar / Euro.GetCotizacion());
     }
 
     public static explicit operator Dolar(Pesos p)
@@ -308,6 +312,11 @@ namespace Billetes
     public static bool operator !=(Pesos p, Dolar d)
     {
       return p != (Pesos)d;
+    }
+
+    public static implicit operator Pesos(Double d)
+    {
+      return new Pesos(d);
     }
   }
 }
