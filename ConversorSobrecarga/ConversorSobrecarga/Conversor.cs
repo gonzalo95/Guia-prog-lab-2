@@ -43,7 +43,17 @@ namespace Conversor
 
     public static string operator -(NumeroBinario b, NumeroDecimal d)
     {
-      return Conversor.DecimalBinario(d.num - Conversor.BinarioDecimal(b.num));
+      return Conversor.DecimalBinario(Conversor.BinarioDecimal(b.num) - d.num);
+    }
+
+    public static implicit operator NumeroBinario(string str)
+    {
+      return new NumeroBinario(str);
+    }
+
+    public static explicit operator string(NumeroBinario b)
+    {
+      return b.num;
     }
   }
 
@@ -69,6 +79,20 @@ namespace Conversor
     public static double operator +(NumeroDecimal d, NumeroBinario b)
     {
       return d.num + Conversor.BinarioDecimal(b.num);
+    }
+    public static double operator -(NumeroDecimal d, NumeroBinario b)
+    {
+      return d.num - Conversor.BinarioDecimal(b.num);
+    }
+
+    public static implicit operator NumeroDecimal(double num)
+    {
+      return new NumeroDecimal(num);
+    }
+
+    public static explicit operator double(NumeroDecimal d)
+    {
+      return d.num;
     }
   }
 }
