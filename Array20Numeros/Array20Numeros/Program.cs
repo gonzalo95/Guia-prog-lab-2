@@ -11,31 +11,43 @@ namespace Array20Numeros
     static void Main(string[] args)
     {
       int[] array = GenerarArray();
+      int[] positivos;
+      int[] negativos;
 
       Console.WriteLine("Array original");
       ImprimirArray(array);
 
-      Ordenar(array);
+      positivos = array.Where(x => x > 0).ToArray();
+      Ordenar(positivos, -1);
 
-      Console.WriteLine("\nArray ordenado ascendentemente");
-      ImprimirArray(array);
+      Console.WriteLine("\nPositivos ordenados de forma descendente");
+      ImprimirArray(positivos);
 
-      Console.WriteLine("\nArray ordenado Descendentemente (?");
+
+      negativos = array.Where(x => x < 0).ToArray();
+      Ordenar(negativos, 1);
+
+      Console.WriteLine("\nNegativos ordenados de forma ascendente");
+      ImprimirArray(negativos);
 
       Console.Read();
     }
 
     static int[] GenerarArray()
     {
-      int[] array = new int[20];
+      const int tam = 20; 
+      int[] array = new int[tam];
       Random r = new Random();
       int num;
 
-      for (int i = 0; i < 20; i++)
+      for (int i = 0; i < tam; i++)
       {
         num = r.Next(-100, 100);
-        if (num != 0)
-          array[i] = num;
+        while(num == 0)
+        {
+          num = r.Next(-100, 100);
+        }
+        array[i] = num;
       }
       return array;
     }
@@ -48,22 +60,39 @@ namespace Array20Numeros
       }
       Console.Write("\n");
     }
-
-    static void Ordenar(int[] array)
+    static void Ordenar(int[] array, int orden)
     {
       int aux;
 
-      for(int i = 0; i < array.Count() - 1; i++)
+      if (orden == 1)
       {
-        for(int j = i + 1; j < array.Count(); j++)
-        {
-          if(array[j] < array[i])
+          for (int i = 0; i < array.Count() - 1; i++)
           {
-            aux = array[i];
-            array[i] = array[j];
-            array[j] = aux;
+              for (int j = i + 1; j < array.Count(); j++)
+              {
+                  if (array[j] < array[i])
+                  {
+                      aux = array[i];
+                      array[i] = array[j];
+                      array[j] = aux;
+                  }
+              }
           }
-        }
+      }
+      else
+      {
+          for (int i = 0; i < array.Count() - 1; i++)
+          {
+              for (int j = i + 1; j < array.Count(); j++)
+              {
+                  if (array[j] > array[i])
+                  {
+                      aux = array[i];
+                      array[i] = array[j];
+                      array[j] = aux;
+                  }
+              }
+          }
       }
     }
   }
