@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -51,9 +51,13 @@ namespace Cola20Numeros
 
         static void Mostar(Queue<int> cola)
         {
+            List<int> aux = new List<int>();
+            int num;
             while(cola.Count > 0)
             {
-                Console.Write(cola.Dequeue() + " ");
+                num = cola.Dequeue();
+                aux.Add(num);
+                Console.Write(num + " ");
             }
         }
 
