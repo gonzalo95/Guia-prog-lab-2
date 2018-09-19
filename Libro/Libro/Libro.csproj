@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{DF3B7FB8-172D-4679-8F2C-8395AF798BE8}</ProjectGuid>
-    <OutputType>WinExe</OutputType>
-    <RootNamespace>Clase8</RootNamespace>
-    <AssemblyName>Clase8</AssemblyName>
+    <ProjectGuid>{B43A2638-473D-48E4-AFD9-0C025CAD0FBD}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>Libro</RootNamespace>
+    <AssemblyName>Libro</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -38,63 +38,20 @@
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Data" />
-    <Reference Include="System.Deployment" />
-    <Reference Include="System.Drawing" />
     <Reference Include="System.Net.Http" />
-    <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Form1.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
-    </Compile>
-    <Compile Include="frmEmpresa.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frmEmpresa.Designer.cs">
-      <DependentUpon>frmEmpresa.cs</DependentUpon>
-    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frmEmpresa.resx">
-      <DependentUpon>frmEmpresa.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Properties\Resources.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
-    <Compile Include="Properties\Resources.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DependentUpon>Resources.resx</DependentUpon>
-    </Compile>
-    <None Include="Properties\Settings.settings">
-      <Generator>SettingsSingleFileGenerator</Generator>
-      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
-    </None>
-    <Compile Include="Properties\Settings.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DependentUpon>Settings.settings</DependentUpon>
-      <DesignTimeSharedInput>True</DesignTimeSharedInput>
-    </Compile>
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\BibliotecaEmpresa\BibliotecaEmpresa.csproj">
-      <Project>{ff1982b0-28f6-4e29-af00-67fbce1308ba}</Project>
-      <Name>BibliotecaEmpresa</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\BiblotecaEmpleado\BiblotecaEmpleado.csproj">
-      <Project>{b6c3552d-36e8-44c7-8a92-e2fd0d604861}</Project>
-      <Name>BiblotecaEmpleado</Name>
+    <ProjectReference Include="..\BibliotecaLibro\BibliotecaLibro.csproj">
+      <Project>{9e47dc09-ca27-4adb-ab1f-e38411a06bed}</Project>
+      <Name>BibliotecaLibro</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

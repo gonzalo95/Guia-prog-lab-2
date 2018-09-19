@@ -44,6 +44,12 @@ namespace Clase8
             EPuestoJerarquico puesto;
             Enum.TryParse<EPuestoJerarquico>(cmbPuesto.SelectedValue.ToString(), out puesto);
             Empleado empleado = new Empleado(txtNombre.Text, txtApellido.Text, mtxtLegajo.Text, puesto, Convert.ToInt32(mtxtSalario.Text));
+            
+        }
+
+        private void tbnEmpresa_Click(object sender, EventArgs e)
+        {
+            
         }
     }
 }

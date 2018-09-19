@@ -119,6 +119,7 @@
             this.tbnEmpresa.TabIndex = 8;
             this.tbnEmpresa.Text = "Empresa";
             this.tbnEmpresa.UseVisualStyleBackColor = true;
+            this.tbnEmpresa.Click += new System.EventHandler(this.tbnEmpresa_Click);
             // 
             // btnLimpiar
             // 
