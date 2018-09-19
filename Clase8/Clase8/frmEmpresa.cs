@@ -13,16 +13,27 @@ namespace Clase8
 {
     public partial class frmEmpresa : Form
     {
-        public frmEmpresa()
+        public Empresa empresa;
+        public frmEmpresa(Empresa empresa)
         {
             InitializeComponent();
+            this.empresa = empresa;
         }
 
         private void btnAceptar_Click(object sender, EventArgs e)
         {
             if (ValidarEntradas())
             {
-                Empresa empresa = new Empresa(txtRazonSocial.Text, txtDireccion.Text, float.Parse(txtGanancias.Text));
+                if(this.empresa == null)
+                    this.empresa = new Empresa(txtRazonSocial.Text, txtDireccion.Text, float.Parse(txtGanancias.Text));
+                else
+                {
+                    this.empresa.RazonSocial = txtRazonSocial.Text;
+                    this.empresa.Direccion = txtDireccion.Text;
+                    this.empresa.Ganancias = float.Parse(txtGanancias.Text);
+                }
+
+                this.DialogResult = System.Windows.Forms.DialogResult.OK;
                 this.Close();
             }
             else

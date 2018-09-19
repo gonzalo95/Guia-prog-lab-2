@@ -78,11 +78,11 @@ namespace BibliotecaEmpresa
         public string MostarEmpresa()
         {
             StringBuilder salida = new StringBuilder();
-            salida.AppendFormat("La empresa {0} sita en la calle {1} cuenta con ganancias por {2} y con {3} empleados:\n", this._razonSocial, this._direccion, this._ganancias, this._nominaEmpleados.Count);
+            salida.AppendFormat("La empresa {0} sitiada en la calle {1} cuenta con ganancias por {2} y con {3} empleado/s:\n", this._razonSocial, this._direccion, this._ganancias, this._nominaEmpleados.Count);
 
             foreach(Empleado empleado in this._nominaEmpleados)
             {
-                empleado.Mostrar();
+                salida.Append(empleado.Mostrar());
             }
 
             return salida.ToString();

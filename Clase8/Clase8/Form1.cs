@@ -14,6 +14,7 @@ namespace Clase8
 {
     public partial class frmClase8 : Form
     {
+        private Empresa empresa;
         public frmClase8()
         {
           InitializeComponent();
@@ -37,19 +38,40 @@ namespace Clase8
             }
             */
             cmbPuesto.DataSource = Enum.GetValues(typeof(EPuestoJerarquico));
+            btnEmpresa_Click(sender, e);
         }
 
         private void btnAgregar_Click(object sender, EventArgs e)
         {
             EPuestoJerarquico puesto;
             Enum.TryParse<EPuestoJerarquico>(cmbPuesto.SelectedValue.ToString(), out puesto);
-            Empleado empleado = new Empleado(txtNombre.Text, txtApellido.Text, mtxtLegajo.Text, puesto, Convert.ToInt32(mtxtSalario.Text));
-            
+            Empleado empleado = new Empleado(txtNombre.Text, txtApellido.Text, mtxtLegajo.Text, puesto, GetSalario(mtxtSalario.Text));
+            if(this.empresa + empleado)
+                rtxtConsola.Text = this.empresa.MostarEmpresa();
         }
 
-        private void tbnEmpresa_Click(object sender, EventArgs e)
+        private void btnEmpresa_Click(object sender, EventArgs e)
         {
-            
+            frmEmpresa pantallaEmpresa = new frmEmpresa(this.empresa);
+            pantallaEmpresa.ShowDialog();
+            if (pantallaEmpresa.DialogResult == DialogResult.OK)
+                this.empresa = pantallaEmpresa.empresa;
+        }
+
+        private int GetSalario(string cadena)
+        {
+            int salario;
+            StringBuilder sb = new StringBuilder();
+
+            foreach(char c in cadena)
+            {
+                if (char.IsDigit(c))
+                    sb.Append(c);
+            }
+
+            salario = int.Parse(sb.ToString());
+
+            return salario;
         }
     }
 }

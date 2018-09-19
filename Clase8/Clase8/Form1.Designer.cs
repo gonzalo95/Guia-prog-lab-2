@@ -36,7 +36,7 @@
             this.txtNombre = new System.Windows.Forms.TextBox();
             this.txtApellido = new System.Windows.Forms.TextBox();
             this.cmbPuesto = new System.Windows.Forms.ComboBox();
-            this.tbnEmpresa = new System.Windows.Forms.Button();
+            this.btnEmpresa = new System.Windows.Forms.Button();
             this.btnLimpiar = new System.Windows.Forms.Button();
             this.btnAgregar = new System.Windows.Forms.Button();
             this.rtxtConsola = new System.Windows.Forms.RichTextBox();
@@ -111,15 +111,15 @@
             this.cmbPuesto.Size = new System.Drawing.Size(100, 21);
             this.cmbPuesto.TabIndex = 7;
             // 
-            // tbnEmpresa
+            // btnEmpresa
             // 
-            this.tbnEmpresa.Location = new System.Drawing.Point(15, 182);
-            this.tbnEmpresa.Name = "tbnEmpresa";
-            this.tbnEmpresa.Size = new System.Drawing.Size(75, 23);
-            this.tbnEmpresa.TabIndex = 8;
-            this.tbnEmpresa.Text = "Empresa";
-            this.tbnEmpresa.UseVisualStyleBackColor = true;
-            this.tbnEmpresa.Click += new System.EventHandler(this.tbnEmpresa_Click);
+            this.btnEmpresa.Location = new System.Drawing.Point(15, 182);
+            this.btnEmpresa.Name = "btnEmpresa";
+            this.btnEmpresa.Size = new System.Drawing.Size(75, 23);
+            this.btnEmpresa.TabIndex = 8;
+            this.btnEmpresa.Text = "Empresa";
+            this.btnEmpresa.UseVisualStyleBackColor = true;
+            this.btnEmpresa.Click += new System.EventHandler(this.btnEmpresa_Click);
             // 
             // btnLimpiar
             // 
@@ -175,7 +175,7 @@
             this.Controls.Add(this.rtxtConsola);
             this.Controls.Add(this.btnAgregar);
             this.Controls.Add(this.btnLimpiar);
-            this.Controls.Add(this.tbnEmpresa);
+            this.Controls.Add(this.btnEmpresa);
             this.Controls.Add(this.cmbPuesto);
             this.Controls.Add(this.txtApellido);
             this.Controls.Add(this.txtNombre);
@@ -202,7 +202,7 @@
     private System.Windows.Forms.TextBox txtNombre;
     private System.Windows.Forms.TextBox txtApellido;
     private System.Windows.Forms.ComboBox cmbPuesto;
-    private System.Windows.Forms.Button tbnEmpresa;
+    private System.Windows.Forms.Button btnEmpresa;
     private System.Windows.Forms.Button btnLimpiar;
     private System.Windows.Forms.Button btnAgregar;
     private System.Windows.Forms.RichTextBox rtxtConsola;
