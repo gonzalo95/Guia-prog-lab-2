@@ -4,55 +4,17 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace EntidadJugador
+namespace Entidades
 {
-    public class Jugador
+    public class Jugador : Persona
     {
-        private long dni;
-        private string nombre;
         private int partidosJugados;
         private int totalGoles;
 
-        private Jugador()
+        public Jugador(string nombre, int goles, int partidos) : base(nombre)
         {
-            this.partidosJugados = 0;
-            this.totalGoles = 0;
-        }
-
-        public Jugador(long dni, string nombre) :this()
-        {
-            this.dni = dni;
-            this.nombre = nombre;
-        }
-
-        public Jugador(long dni, string nombre, int goles, int partidos) : this(dni, nombre)
-        {
-            this.totalGoles = goles;
-            this.partidosJugados = partidos;
-        }
-
-        public long Dni
-        {
-            get
-            {
-                return this.dni;
-            }
-            set
-            {
-                this.dni = value;
-            }
-        }
-
-        public string Nombre
-        {
-            get
-            {
-                return this.nombre;
-            }
-            set
-            {
-                this.nombre = value;
-            }
+            TotalGoles = goles;
+            PartidosJugados = partidos;
         }
 
         public int PartidosJugados
@@ -61,6 +23,10 @@ namespace EntidadJugador
             {
                 return this.partidosJugados;
             }
+            set
+            {
+                this.partidosJugados = value;
+            }
         }
 
         public int TotalGoles
@@ -68,6 +34,10 @@ namespace EntidadJugador
             get
             {
                 return this.totalGoles;
+            }
+            set
+            {
+                this.totalGoles = value;
             }
         }
 
@@ -80,12 +50,11 @@ namespace EntidadJugador
         }
 
 
-        public string MostrarDatos()
+        public override string MostrarDatos()
         {
             StringBuilder sb = new StringBuilder();
 
-            sb.AppendFormat("Nombre: {0}\n", this.nombre);
-            sb.AppendFormat("Dni: {0}\n", this.dni);
+            sb.Append(base.MostrarDatos());
             sb.AppendFormat("Total partidos: {0}\n", this.partidosJugados);
             sb.AppendFormat("promedio de gol: {0}\n", this.PromedioDeGol);
             sb.AppendFormat("Total goles: {0}\n", this.totalGoles);
@@ -96,7 +65,7 @@ namespace EntidadJugador
 
         public static bool operator ==(Jugador e1, Jugador e2)
         {
-            return e1.dni == e2.dni;
+            return e1.Dni == e2.Dni;
         }
 
         public static bool operator !=(Jugador e1, Jugador e2)

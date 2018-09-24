@@ -3,15 +3,16 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using EntidadJugador;
 
-namespace EntidadEquipo
+
+namespace Entidades
 {
     public class Equipo
     {
         private short cantidadDeJugadores;
         private List<Jugador> listaDeJugadores;
         private string nombre;
+        private DirectorTecnico directorTecnico;
 
         private Equipo()
         {
@@ -24,6 +25,10 @@ namespace EntidadEquipo
             this.nombre = nombre;
         }
 
+        public Equipo(short cantidad, string nombre, DirectorTecnico dt) : this(cantidad, nombre)
+        {
+            this.directorTecnico = dt;
+        }
         public static bool operator +(Equipo e, Jugador j)
         {
             bool salida = false;

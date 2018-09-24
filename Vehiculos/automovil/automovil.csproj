@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{CB757514-BC66-4DA6-B0AF-5C2159D4357C}</ProjectGuid>
+    <ProjectGuid>{BC98E1E1-F5D8-464E-9271-EC5A61D94DEE}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>EntidadEquipo</RootNamespace>
-    <AssemblyName>EntidadEquipo</AssemblyName>
+    <RootNamespace>automovil</RootNamespace>
+    <AssemblyName>automovil</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>
@@ -41,21 +41,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Equipo.cs" />
+    <Compile Include="Automovil.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\Ejercicio 35\DirectorTecnico\DirectorTecnico.csproj">
-      <Project>{ac4eaef5-03f9-40b7-8aef-5a767f0a5c44}</Project>
-      <Name>DirectorTecnico</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\..\Ejercicio 35\Persona\Persona.csproj">
-      <Project>{83a3eab2-9014-495a-b9f2-827753bb9d37}</Project>
-      <Name>Persona</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\ClassLibrary1EntidadJugador\EntidadJugador.csproj">
-      <Project>{127a7d54-d55e-461e-ae9f-20c36cf739ed}</Project>
-      <Name>EntidadJugador</Name>
+    <ProjectReference Include="..\VehiculoTerrestre\VehiculoTerrestre.csproj">
+      <Project>{89e85d09-e642-46de-aaf1-11ca53c7f845}</Project>
+      <Name>VehiculoTerrestre</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
