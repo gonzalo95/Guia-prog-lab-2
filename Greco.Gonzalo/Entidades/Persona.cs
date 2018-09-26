@@ -6,15 +6,7 @@ using System.Threading.Tasks;
 
 namespace Entidades
 {
-    public enum Divisiones
-    {
-        A,
-        B,
-        C,
-        D,
-        E
-    }
-    public class Persona
+    public abstract class Persona
     {
         string apellido;
         string documento;
@@ -49,7 +41,25 @@ namespace Entidades
             }
         }
 
-        protected abstract bool ValidarDocumentacion(string documentacion)
-        { }
+        public Persona(string nombre, string apellido, string documento)
+        {
+            this.apellido = apellido;
+            this.Documento = documento;
+            this.nombre = nombre;
+        }
+
+        public virtual string ExponerDatos()
+        {
+            StringBuilder salida = new StringBuilder();
+
+            salida.AppendFormat("Nombre: {0}\n", Nombre);
+            salida.AppendFormat("Apellido: {0}\n", Apellido);
+            salida.AppendFormat("Documento: {0}\n", Documento);
+
+            return salida.ToString();
+        }
+
+        protected abstract bool ValidarDocumentacion(string documentacion);
+
     }
 }
