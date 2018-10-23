@@ -136,7 +136,9 @@ namespace Entidades
 
         public static Centralita operator +(Centralita c, Llamada nuevaLlamada)
         {
-            if (c != nuevaLlamada)
+            if (c == nuevaLlamada)
+                throw new CentralitaException("La llamada ya se encontraba cargada", "Centralita", "+");
+            else
                 c.AgregarLlamada(nuevaLlamada);
 
             return c;

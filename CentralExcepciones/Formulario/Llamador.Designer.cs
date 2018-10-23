@@ -266,6 +266,7 @@
             this.Name = "frmLlamador";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Llamador";
+            this.Load += new System.EventHandler(this.frmLlamador_Load);
             this.gpbPanel.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();

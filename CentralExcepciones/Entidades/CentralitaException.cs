@@ -27,14 +27,16 @@ namespace Entidades
             }
         }
 
-        CentralitaException(string mensaje, string clase, string metodo)
+        public CentralitaException(string mensaje, string clase, string metodo)
         {
-
+            this.nombreClase = clase;
+            this.nombreMetodo = metodo;
         }
 
-        CentralitaException(string mensaje, string clase, string metodo, Exception innerException)
+        public CentralitaException(string mensaje, string clase, string metodo, Exception innerException)
         {
-
+            this.nombreClase = clase;
+            this.nombreMetodo = metodo;
         }
     }
 }

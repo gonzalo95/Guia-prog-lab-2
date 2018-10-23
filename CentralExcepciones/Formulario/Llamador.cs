@@ -190,19 +190,31 @@ namespace Formulario
         {
             Random duracion = new Random();
 
-            if(this.txtDestino.Text.First() == '#')
+            try
             {
-                Provincial.Franja franjas;
-                Enum.TryParse<Provincial.Franja>(cmbFranja.SelectedValue.ToString(), out franjas);
-                Provincial provincial = new Provincial(this.txtOrigen.Text, franjas, (float)duracion.Next(1, 50), this.txtDestino.Text);
-                this.central += provincial;
+                if (this.txtDestino.Text.First() == '#')
+                {
+                    Provincial.Franja franjas;
+                    Enum.TryParse<Provincial.Franja>(cmbFranja.SelectedValue.ToString(), out franjas);
+                    Provincial provincial = new Provincial(this.txtOrigen.Text, franjas, (float)duracion.Next(1, 50), this.txtDestino.Text);
+                    this.central += provincial;
+                }
+                else
+                {
+                    Random costo = new Random();
+                    Local local = new Local(this.txtOrigen.Text, (float)duracion.Next(1, 50), this.txtDestino.Text, (float)costo.Next(1, 5));
+                    this.central += local;
+                }
             }
-            else
+            catch(CentralitaException exc)
             {
-                Random costo = new Random();
-                Local local = new Local(this.txtOrigen.Text, (float)duracion.Next(1, 50), this.txtDestino.Text, (float)costo.Next(1, 5));
-                this.central += local;
+                MessageBox.Show("Error", "La llamada ya se encontraba registrada", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+        }
+
+        private void frmLlamador_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
