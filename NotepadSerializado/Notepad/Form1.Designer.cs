@@ -30,14 +30,18 @@
         {
             this.rtbEditor = new System.Windows.Forms.RichTextBox();
             this.mstMenu = new System.Windows.Forms.MenuStrip();
-            this.statusStrip1 = new System.Windows.Forms.StatusStrip();
             this.archivoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.abrirToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.guargarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.guardarComoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.tsmiAbrir = new System.Windows.Forms.ToolStripMenuItem();
+            this.tsmiAbrirBinario = new System.Windows.Forms.ToolStripMenuItem();
+            this.tsmiAbrirTexto = new System.Windows.Forms.ToolStripMenuItem();
+            this.tsmiGuardar = new System.Windows.Forms.ToolStripMenuItem();
+            this.tsmiGuardarComo = new System.Windows.Forms.ToolStripMenuItem();
+            this.tsmiBinarioGuardarComo = new System.Windows.Forms.ToolStripMenuItem();
+            this.tsmiTextoGuardarComo = new System.Windows.Forms.ToolStripMenuItem();
+            this.statusStrip1 = new System.Windows.Forms.StatusStrip();
+            this.toolStripStatusCaracteres = new System.Windows.Forms.ToolStripStatusLabel();
             this.sfdGuardar = new System.Windows.Forms.SaveFileDialog();
             this.ofdAbrir = new System.Windows.Forms.OpenFileDialog();
-            this.toolStripStatusCaracteres = new System.Windows.Forms.ToolStripStatusLabel();
             this.mstMenu.SuspendLayout();
             this.statusStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -62,6 +66,69 @@
             this.mstMenu.TabIndex = 1;
             this.mstMenu.Text = "Archivo";
             // 
+            // archivoToolStripMenuItem
+            // 
+            this.archivoToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.tsmiAbrir,
+            this.tsmiGuardar,
+            this.tsmiGuardarComo});
+            this.archivoToolStripMenuItem.Name = "archivoToolStripMenuItem";
+            this.archivoToolStripMenuItem.Size = new System.Drawing.Size(60, 20);
+            this.archivoToolStripMenuItem.Text = "Archivo";
+            // 
+            // tsmiAbrir
+            // 
+            this.tsmiAbrir.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.tsmiAbrirBinario,
+            this.tsmiAbrirTexto});
+            this.tsmiAbrir.Name = "tsmiAbrir";
+            this.tsmiAbrir.Size = new System.Drawing.Size(180, 22);
+            this.tsmiAbrir.Text = "Abrir";
+            // 
+            // tsmiAbrirBinario
+            // 
+            this.tsmiAbrirBinario.Name = "tsmiAbrirBinario";
+            this.tsmiAbrirBinario.Size = new System.Drawing.Size(180, 22);
+            this.tsmiAbrirBinario.Text = "Binario";
+            this.tsmiAbrirBinario.Click += new System.EventHandler(this.binarioToolStripMenuItem_Click);
+            // 
+            // tsmiAbrirTexto
+            // 
+            this.tsmiAbrirTexto.Name = "tsmiAbrirTexto";
+            this.tsmiAbrirTexto.Size = new System.Drawing.Size(180, 22);
+            this.tsmiAbrirTexto.Text = "Texto";
+            this.tsmiAbrirTexto.Click += new System.EventHandler(this.textoToolStripMenuItem_Click);
+            // 
+            // tsmiGuardar
+            // 
+            this.tsmiGuardar.Name = "tsmiGuardar";
+            this.tsmiGuardar.Size = new System.Drawing.Size(180, 22);
+            this.tsmiGuardar.Text = "Guargar";
+            this.tsmiGuardar.Click += new System.EventHandler(this.guargarToolStripMenuItem_Click);
+            // 
+            // tsmiGuardarComo
+            // 
+            this.tsmiGuardarComo.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.tsmiBinarioGuardarComo,
+            this.tsmiTextoGuardarComo});
+            this.tsmiGuardarComo.Name = "tsmiGuardarComo";
+            this.tsmiGuardarComo.Size = new System.Drawing.Size(180, 22);
+            this.tsmiGuardarComo.Text = "Guardar como...";
+            // 
+            // tsmiBinarioGuardarComo
+            // 
+            this.tsmiBinarioGuardarComo.Name = "tsmiBinarioGuardarComo";
+            this.tsmiBinarioGuardarComo.Size = new System.Drawing.Size(180, 22);
+            this.tsmiBinarioGuardarComo.Text = "Binario";
+            this.tsmiBinarioGuardarComo.Click += new System.EventHandler(this.binarioToolStripMenuItem1_Click);
+            // 
+            // tsmiTextoGuardarComo
+            // 
+            this.tsmiTextoGuardarComo.Name = "tsmiTextoGuardarComo";
+            this.tsmiTextoGuardarComo.Size = new System.Drawing.Size(180, 22);
+            this.tsmiTextoGuardarComo.Text = "Texto";
+            this.tsmiTextoGuardarComo.Click += new System.EventHandler(this.textoToolStripMenuItem1_Click);
+            // 
             // statusStrip1
             // 
             this.statusStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -72,46 +139,15 @@
             this.statusStrip1.TabIndex = 2;
             this.statusStrip1.Text = "statusStrip1";
             // 
-            // archivoToolStripMenuItem
-            // 
-            this.archivoToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.abrirToolStripMenuItem,
-            this.guargarToolStripMenuItem,
-            this.guardarComoToolStripMenuItem});
-            this.archivoToolStripMenuItem.Name = "archivoToolStripMenuItem";
-            this.archivoToolStripMenuItem.Size = new System.Drawing.Size(60, 20);
-            this.archivoToolStripMenuItem.Text = "Archivo";
-            // 
-            // abrirToolStripMenuItem
-            // 
-            this.abrirToolStripMenuItem.Name = "abrirToolStripMenuItem";
-            this.abrirToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.abrirToolStripMenuItem.Text = "Abrir";
-            this.abrirToolStripMenuItem.Click += new System.EventHandler(this.abrirToolStripMenuItem_Click);
-            // 
-            // guargarToolStripMenuItem
-            // 
-            this.guargarToolStripMenuItem.Name = "guargarToolStripMenuItem";
-            this.guargarToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.guargarToolStripMenuItem.Text = "Guargar";
-            this.guargarToolStripMenuItem.Click += new System.EventHandler(this.guargarToolStripMenuItem_Click);
-            // 
-            // guardarComoToolStripMenuItem
-            // 
-            this.guardarComoToolStripMenuItem.Name = "guardarComoToolStripMenuItem";
-            this.guardarComoToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.guardarComoToolStripMenuItem.Text = "Guardar como...";
-            this.guardarComoToolStripMenuItem.Click += new System.EventHandler(this.guardarComoToolStripMenuItem_Click);
-            // 
-            // ofdAbrir
-            // 
-            this.ofdAbrir.FileName = "openFileDialog1";
-            // 
             // toolStripStatusCaracteres
             // 
             this.toolStripStatusCaracteres.Name = "toolStripStatusCaracteres";
             this.toolStripStatusCaracteres.Size = new System.Drawing.Size(10, 17);
             this.toolStripStatusCaracteres.Text = " ";
+            // 
+            // ofdAbrir
+            // 
+            this.ofdAbrir.FileName = "openFileDialog1";
             // 
             // frmFormulario
             // 
@@ -139,12 +175,16 @@
         private System.Windows.Forms.MenuStrip mstMenu;
         private System.Windows.Forms.StatusStrip statusStrip1;
         private System.Windows.Forms.ToolStripMenuItem archivoToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem abrirToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem guargarToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem guardarComoToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem tsmiAbrir;
+        private System.Windows.Forms.ToolStripMenuItem tsmiGuardar;
+        private System.Windows.Forms.ToolStripMenuItem tsmiGuardarComo;
         private System.Windows.Forms.ToolStripStatusLabel toolStripStatusCaracteres;
         private System.Windows.Forms.SaveFileDialog sfdGuardar;
         private System.Windows.Forms.OpenFileDialog ofdAbrir;
+        private System.Windows.Forms.ToolStripMenuItem tsmiAbrirBinario;
+        private System.Windows.Forms.ToolStripMenuItem tsmiAbrirTexto;
+        private System.Windows.Forms.ToolStripMenuItem tsmiBinarioGuardarComo;
+        private System.Windows.Forms.ToolStripMenuItem tsmiTextoGuardarComo;
     }
 }
 

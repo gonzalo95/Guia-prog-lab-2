@@ -7,22 +7,29 @@ using System.IO;
 
 namespace IO
 {
-    public class PuntoTxt : Archivo, IArchivos<PuntoTxt>
+    public class PuntoTxt : Archivo, IArchivos<string>
     {
-        public bool Guardar(string ruta, PuntoTxt obj)
+        public bool Guardar(string ruta, string obj)
         {
-
+            if (obj != null)
+            {
+                StreamWriter escritor = new StreamWriter(ruta);
+                escritor.Write(obj);
+                escritor.Close();
+            }
+            return true;
         }
 
         public string Leer(string ruta)
         {
-            if (File.Exists(ruta))
-            {
-                StreamReader lector = new StreamReader(ruta);
-                this.contenido = lector.ReadToEnd();
-                lector.Close();
-            }
-            return this;
+            string salida = string.Empty;
+            ValidarArchivo(ruta);
+
+            StreamReader lector = new StreamReader(ruta);
+            salida = lector.ReadToEnd();
+            lector.Close();
+
+            return salida;
         }
 
         protected override bool ValidarArchivo(string ruta)

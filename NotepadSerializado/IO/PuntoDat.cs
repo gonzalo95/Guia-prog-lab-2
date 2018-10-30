@@ -5,10 +5,12 @@ using System.Text;
 using System.Threading.Tasks;
 using System.IO;
 using System.Runtime.Serialization.Formatters;
+using System.Runtime.Serialization.Formatters.Binary;
 
 namespace IO
 {
-    class PuntoDat : Archivo , IO.IArchivos<PuntoDat>
+    [Serializable]
+    public class PuntoDat : Archivo , IO.IArchivos<PuntoDat>
     {
         private string contenido;
 
@@ -41,12 +43,20 @@ namespace IO
 
         public bool Guardar(string ruta, PuntoDat obj)
         {
-
+            FileStream fs = new FileStream(ruta, FileMode.Create);
+            BinaryFormatter bf = new BinaryFormatter();
+            bf.Serialize(fs, obj);
+            fs.Close();
+            return true; ;
         }
 
         public PuntoDat Leer(string ruta)
         {
-
+            FileStream fs = new FileStream(ruta, FileMode.Open);
+            BinaryFormatter bf = new BinaryFormatter();
+            PuntoDat salida = (PuntoDat)bf.Deserialize(fs);
+            fs.Close();
+            return salida;
         }
     }
 }
