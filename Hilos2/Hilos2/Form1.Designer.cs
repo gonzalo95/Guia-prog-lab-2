@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.pbxCuadrado = new System.Windows.Forms.PictureBox();
-            this.lblTiempo = new System.Windows.Forms.Label();
+            this.lblCronometro = new System.Windows.Forms.Label();
             this.btnComenzar = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pbxCuadrado)).BeginInit();
             this.SuspendLayout();
@@ -37,26 +37,28 @@
             // pbxCuadrado
             // 
             this.pbxCuadrado.BackColor = System.Drawing.Color.Red;
-            this.pbxCuadrado.Location = new System.Drawing.Point(250, 73);
+            this.pbxCuadrado.Location = new System.Drawing.Point(200, 100);
             this.pbxCuadrado.Name = "pbxCuadrado";
             this.pbxCuadrado.Size = new System.Drawing.Size(47, 42);
             this.pbxCuadrado.TabIndex = 0;
             this.pbxCuadrado.TabStop = false;
             this.pbxCuadrado.Visible = false;
             this.pbxCuadrado.Click += new System.EventHandler(this.pbxCuadrado_Click);
+            this.pbxCuadrado.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pbxCuadrado_MouseDown);
             // 
-            // lblTiempo
+            // lblCronometro
             // 
-            this.lblTiempo.AutoSize = true;
-            this.lblTiempo.Location = new System.Drawing.Point(247, 9);
-            this.lblTiempo.Name = "lblTiempo";
-            this.lblTiempo.Size = new System.Drawing.Size(13, 13);
-            this.lblTiempo.TabIndex = 1;
-            this.lblTiempo.Text = "0";
+            this.lblCronometro.AutoSize = true;
+            this.lblCronometro.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCronometro.Location = new System.Drawing.Point(217, 9);
+            this.lblCronometro.Name = "lblCronometro";
+            this.lblCronometro.Size = new System.Drawing.Size(24, 25);
+            this.lblCronometro.TabIndex = 1;
+            this.lblCronometro.Text = "0";
             // 
             // btnComenzar
             // 
-            this.btnComenzar.Location = new System.Drawing.Point(235, 244);
+            this.btnComenzar.Location = new System.Drawing.Point(185, 199);
             this.btnComenzar.Name = "btnComenzar";
             this.btnComenzar.Size = new System.Drawing.Size(75, 23);
             this.btnComenzar.TabIndex = 2;
@@ -68,12 +70,13 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(575, 279);
+            this.ClientSize = new System.Drawing.Size(484, 262);
             this.Controls.Add(this.btnComenzar);
-            this.Controls.Add(this.lblTiempo);
+            this.Controls.Add(this.lblCronometro);
             this.Controls.Add(this.pbxCuadrado);
             this.Name = "frmFormulario";
             this.Text = "Cuadrado rojo";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.frmFormulario_FormClosing);
             ((System.ComponentModel.ISupportInitialize)(this.pbxCuadrado)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -83,7 +86,7 @@
         #endregion
 
         private System.Windows.Forms.PictureBox pbxCuadrado;
-        private System.Windows.Forms.Label lblTiempo;
+        private System.Windows.Forms.Label lblCronometro;
         private System.Windows.Forms.Button btnComenzar;
     }
 }
